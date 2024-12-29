@@ -6,7 +6,7 @@ description: a1
 runs:
   using: composite
   steps:
-    # - uses: actions/checkout@v4  # made in calling pipeline
+    - uses: actions/checkout@v4  # made in calling pipeline
     - name: Bash
       run: |
         echo "Hi from a1!"

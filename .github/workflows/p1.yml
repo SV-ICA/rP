@@ -10,5 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        repository: SV-ICA/rP
+        ref: main
+        # path: ./.github/workflows
+      - run: |
+          ls -al
+          ls -al .*
+          ls -al *
       - uses: ./.github/actions/a1
       - uses: ./.github/actions/b1
