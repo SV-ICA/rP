@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         repository: SV-ICA/rP
-        ref: main
+        # ref: main
         # path: ./.github/workflows
       - run: |
           ls -al
