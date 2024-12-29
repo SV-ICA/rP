@@ -20,6 +20,10 @@ jobs:
           ls -al .*
           ls -al *
           ls -al rP/
+          ls -al rP/.github
+          ls -al rP/.github/actions
+          ls -al rP/.github/actions/a1
+          ls -al rP/.github/actions/b1
           pwd
       - uses: ./rP/.github/actions/a1
       - uses: ./rP/.github/actions/b1
