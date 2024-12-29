@@ -26,4 +26,5 @@ jobs:
           ls -al rP/.github/actions/b1
           pwd
       - uses: ./rP/.github/actions/a1
+      - uses: ./rP/.github/actions/a1
       - uses: ./rP/.github/actions/b1
