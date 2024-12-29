@@ -3,8 +3,7 @@
 name: Pipeline p1.yml
 
 on:
-  push:
-  workflow_dispatch:  # we can also run it manually
+  workflow_call:
 
 jobs:
   j1:
