@@ -1,0 +1,14 @@
+# 2024-12-29
+
+name: a1
+description: a1
+
+runs:
+  using: composite
+  steps:
+    # - uses: actions/checkout@v4  # made in calling pipeline
+    - name: Bash
+      run: |
+        echo "Hi from a1!"
+        ls -l
+      shell: bash
