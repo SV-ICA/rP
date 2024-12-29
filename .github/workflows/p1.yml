@@ -14,10 +14,11 @@ jobs:
         with:
           repository: SV-ICA/rP
           ref: main
-          path: pR
+          path: rP
       - run: |
           ls -al
           ls -al .*
           ls -al *
-      - uses: ./.github/actions/a1
-      - uses: ./.github/actions/b1
+          ls -al rP/
+      - uses: ./rP/.github/actions/a1
+      - uses: ./rP/.github/actions/b1
