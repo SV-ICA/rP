@@ -9,10 +9,12 @@ jobs:
   j1:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        # repository: SV-ICA/rP
-        # ref: main
-        # path: ./.github/workflows
+      - uses: actions/checkout@v4  # caller's
+      - uses: actions/checkout@v4  # this wf repo
+        with:
+          repository: SV-ICA/rP
+          ref: main
+          path: pR
       - run: |
           ls -al
           ls -al .*
