@@ -1,0 +1,22 @@
+# 2024-12-29, -30
+
+name: Stage 3
+
+on:
+  workflow_call:
+
+jobs:
+  j1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4  # caller's
+      - run: |
+          echo "*** Stage 3"
+          pwd
+          ls -al
+          ls -al .*
+          ls -al *
+          ls -al .github/workflows/
+      # Local calls!!!
+      - uses: SV-ICA/rP/.github/actions/a1@main  # @ref is needed!
+      - uses: SV-ICA/rP/.github/actions/b1@main

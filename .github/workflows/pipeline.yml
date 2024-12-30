@@ -1,0 +1,14 @@
+# 2024-12-29
+
+name: pipeline.yml
+
+on:
+  workflow_call:
+
+jobs:
+  stage1:
+     uses: SV-ICA/rP/.github/workflows/stage1.yml@main
+  stage2:
+     uses: SV-ICA/rP/.github/workflows/stage2.yml@main
+  stage3:
+     uses: SV-ICA/rP/.github/workflows/stage3.yml@main
