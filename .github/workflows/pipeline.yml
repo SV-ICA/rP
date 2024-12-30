@@ -7,8 +7,10 @@ on:
 
 jobs:
   stage1:
-     uses: SV-ICA/rP/.github/workflows/stage1.yml@main
+    uses: SV-ICA/rP/.github/workflows/stage1.yml@main
   stage2:
-     uses: SV-ICA/rP/.github/workflows/stage2.yml@main
+    needs: [stage1]
+    uses: SV-ICA/rP/.github/workflows/stage2.yml@main
   stage3:
-     uses: SV-ICA/rP/.github/workflows/stage3.yml@main
+    needs: [stage2]
+    uses: SV-ICA/rP/.github/workflows/stage3.yml@main
