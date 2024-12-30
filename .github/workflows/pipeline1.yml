@@ -1,9 +1,12 @@
 # 2024-12-29
 
-name: pipeline.yml
+name: pipeline1.yml
 
 on:
   workflow_call:
+
+env:
+  PIPELINE: pipeline1
 
 jobs:
   stage1:

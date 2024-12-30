@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4  # caller's
       - run: |
-          echo "*** Stage 3"
+          echo "*** Stage 3 in ${{ env.PIPELINE }}"
           pwd
           ls -al
           ls -al .*

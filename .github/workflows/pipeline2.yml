@@ -1,0 +1,19 @@
+# 2024-12-29, -30
+
+name: pipeline2.yml
+
+on:
+  workflow_call:
+
+env:
+  PIPELINE: pipeline2
+
+jobs:
+  stage1:
+    uses: SV-ICA/rP/.github/workflows/stage1.yml@main
+  stage2:
+    needs: [stage1]
+    uses: SV-ICA/rP/.github/workflows/stage2.yml@main
+  stage3:
+    needs: [stage2]
+    uses: SV-ICA/rP/.github/workflows/stage3.yml@main
