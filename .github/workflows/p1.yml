@@ -26,5 +26,5 @@ jobs:
           # ls -al rP/.github/actions/a1
           # ls -al rP/.github/actions/b1
           # pwd
-      - uses: SV-ICA/.github/actions/a1
-      - uses: SV-ICA/.github/actions/b1
+      - uses: SV-ICA/rP/.github/actions/a1
+      - uses: SV-ICA/rP/.github/actions/b1
